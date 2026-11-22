@@ -1,128 +1,180 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Islam Osama | Front-End Developer</title>
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div id="loader">Loading...</div>
-    <!-- Navbar -->
-    <header class="navbar">
-        <div class="navbar">
-            <button id="dark-mode-toggle" style="margin-left: auto; background: none; border: none; color: #fff; font-size: 20px; cursor: pointer;">
-                <i class="fas fa-moon"></i>
-            </button>
-            <div class="top-left-name">
-            <i class="fas fa-code"></i> Islam Osama
-            </div>
-            <nav>
-            <ul class="nav-links">
-                <li><a href="#home"><i class="fas fa-house"></i> Home</a></li>
-                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="#services"><i class="fas fa-cogs"></i> Services</a></li>
-                <li><a href="#projects"><i class="fas fa-briefcase"></i> Projects</a></li>
-                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-            </ul>
-            </nav>
-            <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
-        </div>
-    
-    </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Islam Osama — Front-End Developer</title>
+<meta name="description" content="Islam Osama, front-end developer from Egypt. Live projects: Hero Chicken ordering site, Zivo React storefront, games and landing pages.">
+<meta property="og:title" content="Islam Osama — Front-End Developer">
+<meta property="og:description" content="Live websites I built: restaurant ordering, React storefront, games and more.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://islam-osama2024.github.io/Portfolio/">
+<meta property="og:image" content="https://islam-osama2024.github.io/Portfolio/img/portrait.jpg">
+<meta name="theme-color" content="#0b0d10">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <div class="wrap nav-in">
+    <a class="brand" href="#top">Islam<span>.</span>Osama</a>
+    <ul id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#work">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="menu-toggle" aria-label="Menu" type="button">☰</button>
+  </div>
+</nav>
 
-    <!-- Home Section -->
-    <section id="home" class="section home">
-        <div class="home-content">
-        <h1>I am <span id="typed"></span></h1>
-        <a href="#projects" class="btn">View My Work</a>
-        </div>
-    </section>
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <span class="kicker">Front-End Developer · Egypt</span>
+      <h1>Hi, I'm Islam Osama.<br>I build web interfaces <em>people actually use.</em></h1>
+      <p>From restaurant ordering websites to React storefronts, I turn ideas into fast, bilingual, mobile-friendly websites.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#work">View my work</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="img/portrait.jpg" alt="Islam Osama" width="480" height="640" fetchpriority="high">
+    </div>
+  </div>
+</header>
 
-    <!-- About Me -->
-    <section id="about" class="section about">
-        <div class="container">
-        <img src="./img/399398538_6800949339988599_5551620193686820561_n.jpg" alt="Islam Osama" class="about-img">
-        <div class="about-text">
-            <h2>About <span>Me</span></h2>
-            <p>
-            Hi, I’m Islam, a passionate Front-End Developer with experience in building beautiful and responsive websites using HTML, CSS, and JavaScript. I love transforming designs into interactive, user-friendly experiences.
-            </p>
-            <a href="#contact" class="btn">Contact Me</a>
-        </div>
-        </div>
-    </section>
+<section id="about">
+  <div class="wrap">
+    <div class="label">About</div>
+    <h2>A developer who ships</h2>
+    <div class="about-text">
+      <p>I'm a front-end developer who loves turning designs into interactive, user-friendly experiences. What started with HTML and CSS practice pages grew into <b>deployed websites, live on the public internet</b>.</p>
+      <p>My recent work includes a bilingual online ordering website for a restaurant, and <b>Zivo</b>, a React storefront with its own Node.js backend. I care about the details: load speed, mobile layout, and interfaces in both Arabic and English.</p>
+    </div>
+  </div>
+</section>
 
-    <!-- Services -->
-    <section id="services" class="section services">
-        <h2>Our <span>Services</span></h2>
-        <div class="service-cards">
-        <div class="service-card">
-            <i class="fas fa-paint-brush"></i>
-            <h3>Artist</h3>
-            <p>Creative illustrations and digital artwork.</p>
-        </div>
-        <div class="service-card">
-            <i class="fas fa-code"></i>
-            <h3>Developer</h3>
-            <p>Modern websites with HTML, CSS, and JS.</p>
-        </div>
-        <div class="service-card">
-            <i class="fas fa-laptop"></i>
-            <h3>Designer</h3>
-            <p>UI/UX design for seamless user experience.</p>
-        </div>
-        </div>
-    </section>
+<section id="skills">
+  <div class="wrap">
+    <div class="label">Skills</div>
+    <h2>What I work with</h2>
+    <p class="sub">Tools I've used in real, deployed projects.</p>
+    <div class="chips">
+      <div class="chip">HTML5<small>everyday</small></div>
+      <div class="chip">CSS3<small>responsive layouts</small></div>
+      <div class="chip">JavaScript<small>everyday</small></div>
+      <div class="chip">React + Vite<small>Zivo storefront</small></div>
+      <div class="chip">Node.js + Express<small>Zivo backend</small></div>
+      <div class="chip">MongoDB<small>Zivo database</small></div>
+      <div class="chip">Git &amp; GitHub Pages<small>deployment</small></div>
+    </div>
+  </div>
+</section>
 
-    <!-- Projects -->
-    <section id="projects" class="section projects">
-        <h2>Latest <span>Project</span></h2>
-        <div class="project-grid">
-        <img src="./img/images (1).jpeg" alt="Project 1" />
-        <img src="./img/images (2).jpeg" alt="Project 2" />
-        <img src="./img/images (3).jpeg" alt="Project 3" />
-        <img src="./img/images (4).jpeg" alt="Project 4" />
-        <img src="./img/images.jpeg" alt="Project 5" />
-        <img src="./img/istockphoto-1219473617-612x612.jpg" alt="Project 6" />
+<section id="work">
+  <div class="wrap">
+    <div class="label">Selected work</div>
+    <h2>Projects</h2>
+    <p class="sub">Live websites, ordered from most recent. Each one is deployed and can be visited.</p>
+    <div class="grid2">
+      <div class="card">
+        <img src="img/projects/hero-chicken.jpg" alt="Hero Chicken ordering site" loading="lazy" width="800" height="412">
+        <div class="body">
+          <h3>Hero Chicken</h3>
+          <p>Bilingual (AR/EN) online ordering website for a restaurant: menu with categories and search, cart, and WhatsApp checkout.</p>
+          <div class="tags"><span class="tag">JavaScript</span><span class="tag">PWA</span><span class="tag">AR / EN</span></div>
+          <div class="links"><a href="https://islam-osama2024.github.io/Hero-Chicken2016/" target="_blank" rel="noopener">Live site</a><a href="https://github.com/islam-osama2024/Hero-Chicken2016" target="_blank" rel="noopener">Code</a></div>
         </div>
-    </section>
+      </div>
+      <div class="card">
+        <img src="img/projects/zivo.jpg" alt="Zivo storefront sign-in page" loading="lazy" width="800" height="412">
+        <div class="body">
+          <h3>Zivo</h3>
+          <p>Storefront with accounts and bilingual UI, plus its own Node.js + Express + MongoDB backend.</p>
+          <div class="tags"><span class="tag">React</span><span class="tag">Vite</span><span class="tag">Node.js</span><span class="tag">MongoDB</span></div>
+          <div class="links"><a href="https://zivo-six.vercel.app" target="_blank" rel="noopener">Live site</a><a href="https://github.com/islam-osama2024/Zivo" target="_blank" rel="noopener">Code</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="grid2 grid-second">
+      <div class="card">
+        <img src="img/projects/restaurant.jpg" alt="Restaurant landing page" loading="lazy" width="800" height="412">
+        <div class="body">
+          <h3>Restaurant</h3>
+          <p>Classic restaurant landing page with menu, gallery and booking sections.</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+          <div class="links"><a href="https://islam-osama2024.github.io/RESTAURANT/" target="_blank" rel="noopener">Live site</a><a href="https://github.com/islam-osama2024/RESTAURANT" target="_blank" rel="noopener">Code</a></div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/projects/fifa.jpg" alt="FIFA game page in Arabic" loading="lazy" width="800" height="412">
+        <div class="body">
+          <h3>FIFA Game</h3>
+          <p>Arabic promotional landing page for the FIFA game with hero, features and gallery.</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">RTL</span></div>
+          <div class="links"><a href="https://islam-osama2024.github.io/FIFA.com/" target="_blank" rel="noopener">Live site</a><a href="https://github.com/islam-osama2024/FIFA.com" target="_blank" rel="noopener">Code</a></div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/projects/xo.jpg" alt="XO tic-tac-toe game" loading="lazy" width="800" height="412">
+        <div class="body">
+          <h3>XO Game</h3>
+          <p>Playable tic-tac-toe in the browser with score tracking and reset.</p>
+          <div class="tags"><span class="tag">JavaScript</span><span class="tag">Game logic</span></div>
+          <div class="links"><a href="https://islam-osama2024.github.io/X-O-Game--Islam-Osama/" target="_blank" rel="noopener">Live site</a><a href="https://github.com/islam-osama2024/X-O-Game--Islam-Osama" target="_blank" rel="noopener">Code</a></div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/projects/social.jpg" alt="Social links page" loading="lazy" width="800" height="412">
+        <div class="body">
+          <h3>Social Links</h3>
+          <p>A personal link-in-bio page with dark mode connecting all my social profiles.</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Dark mode</span></div>
+          <div class="links"><a href="https://islam-osama2024.github.io/Social-Media/" target="_blank" rel="noopener">Live site</a><a href="https://github.com/islam-osama2024/Social-Media" target="_blank" rel="noopener">Code</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Contact -->
-    <section id="contact" class="section contact">
-        <h2>Contact <span>Me</span></h2>
-        <form class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-        </form>
-    </section>
-    <a href="#home" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
-        <footer style="text-align:center; padding: 20px; background-color: #333; color: #fff;">
-            <p>© 2025 Islam Osama. All Rights Reserved.</p>
-            <div class="social-icons" style="margin-top:10px;">
-            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f" style="color:white; margin: 0 10px;"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter" style="color:white; margin: 0 10px;"></i></a>
-            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in" style="color:white; margin: 0 10px;"></i></a>
-            <a href="https://github.com" target="_blank"><i class="fab fa-github" style="color:white; margin: 0 10px;"></i></a>
-            </div>
-        </footer>
-        <div class="footer-name-fixed">© 2025 Islam Osama</div>
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script>
-  new Typed("#typed", {
-    strings: ["Islam Osama", "Front-End Developer", "UI Designer"],
-    typeSpeed: 60,
-    backSpeed: 40,
-    loop: true
-  });
-</script>
-    <SCript src="script.js"></SCript>
-    </body>
-    </html>
+<section id="archive">
+  <div class="wrap">
+    <div class="label">Archive</div>
+    <h2>Early practice work</h2>
+    <p class="sub">My first exercises while learning front-end development (2024). Kept here for the journey, not as current skill level.</p>
+    <div class="archive-list">
+      <div class="arch"><b>javascript-slide1-2024</b><span>Image slider exercise · HTML</span></div>
+      <div class="arch"><b>project</b><span>First styled page · CSS</span></div>
+      <div class="arch"><b>project2</b><span>Layout exercise · HTML</span></div>
+      <div class="arch"><b>my_frist_project</b><span>Very first page · CSS</span></div>
+      <div class="arch"><b>Git_hub</b><span>Git &amp; GitHub study notes</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="label">Contact</div>
+    <h2>Get in touch</h2>
+    <p class="sub">You can reach me on any of these channels.</p>
+    <div class="contact-grid">
+      <a class="cbtn" href="https://wa.me/201021771120" target="_blank" rel="noopener"><span class="dot"></span>WhatsApp</a>
+      <a class="cbtn" href="mailto:osamaeslam483@gmail.com"><span class="dot"></span>Email</a>
+      <a class="cbtn" href="https://www.linkedin.com/in/eslam-osama-0119242a6/" target="_blank" rel="noopener"><span class="dot"></span>LinkedIn</a>
+      <a class="cbtn" href="https://github.com/islam-osama2024" target="_blank" rel="noopener"><span class="dot"></span>GitHub</a>
+      <a class="cbtn" href="https://t.me/islam-osama2024" target="_blank" rel="noopener"><span class="dot"></span>Telegram</a>
+      <a class="cbtn" href="https://www.instagram.com/eslamosama_11/" target="_blank" rel="noopener"><span class="dot"></span>Instagram</a>
+      <a class="cbtn" href="https://web.facebook.com/eslam.osama.3532/" target="_blank" rel="noopener"><span class="dot"></span>Facebook</a>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Islam Osama · Built with HTML, CSS &amp; JavaScript · Deployed on GitHub Pages</footer>
+<script src="site.js"></script>
+</body>
+</html>
